@@ -1,4 +1,4 @@
-# OMNI — local AI coding assistant
+# OMNI
 
 OMNI is a Windows-first, terminal-based coding agent designed to run against a **local GGUF model** through `llama.cpp`'s `llama-server`. It can inspect a chosen project, search and read text files, prepare and apply precise edits, run approved development commands, report actual test results, and keep persistent conversations on the same machine.
 
@@ -120,6 +120,3 @@ Invalid or unknown keys are reported instead of being silently accepted. OMNI's 
 
 Run `uninstall.ps1` from the extracted project folder. It asks separately whether to remove application files, local data/models/backups, and configuration. Answering no preserves that category. Existing PowerShell sessions may need to restart after PATH cleanup.
 
-## Architecture / known limitations
-
-See [Main.md](Main.md) for component details, execution flow, data model, security boundaries, tests and known limitations. This release has a real local inference client and usable agent loop, but has not been GPU-tested on your computer. Optional tests needing a large downloaded model or a compatible GPU were not run by the developer environment. Windows PowerShell installation has been authored but cannot be fully validated on a non-Windows host. No claim is made that any selected model fits a given hardware profile without testing it.
